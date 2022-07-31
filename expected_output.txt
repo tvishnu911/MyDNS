@@ -1,0 +1,90 @@
+
+A- Record:
+
+Input:
+mydig www.google.co.jp A
+
+
+Expected output:
+
+QUESTION SECTION:
+www.google.co.jp     IN      A
+ANSWER SECTION:
+google.co.jp. 300 IN A 142.250.176.195
+
+Query time: 320 msec
+When: Thu Sep 23 19:53:10 2021
+MSG SIZE rcvd: 88
+
+
+NS-Record:
+
+Input:
+mydig www.amazon.com NS
+
+Expected output:
+
+QUESTION SECTION:
+www.amazon.com     IN      NS
+ANSWER SECTION:
+amazon.com. 3600 IN NS pdns1.ultradns.net.
+amazon.com. 3600 IN NS ns4.p31.dynect.net.
+amazon.com. 3600 IN NS ns3.p31.dynect.net.
+amazon.com. 3600 IN NS ns2.p31.dynect.net.
+amazon.com. 3600 IN NS ns1.p31.dynect.net.
+amazon.com. 3600 IN NS pdns6.ultradns.co.uk.
+
+Query time: 98 msec
+When: Thu Sep 23 19:54:12 2021
+MSG SIZE rcvd: 88
+
+MX-Record:
+
+Input:
+mydig www.google.com MX
+
+Expected output:
+
+QUESTION SECTION:
+www.google.com     IN      MX
+ANSWER SECTION:
+google.com. 600 IN MX 20 alt1.aspmx.l.google.com.
+google.com. 600 IN MX 50 alt4.aspmx.l.google.com.
+google.com. 600 IN MX 40 alt3.aspmx.l.google.com.
+google.com. 600 IN MX 30 alt2.aspmx.l.google.com.
+google.com. 600 IN MX 10 aspmx.l.google.com.
+
+Query time: 77 msec
+When: Thu Sep 23 19:54:44 2021
+
+
+MSG SIZE rcvd: 88
+
+A-Record:
+
+Input:
+mydig www.linkedin.com A
+
+QUESTION SECTION:
+www.cs.stonybrook.edu     IN      A
+ANSWER SECTION:
+cs.stonybrook.edu. 900 IN A 130.245.27.3
+
+Query time: 122 msec
+When: Thu Sep 23 19:55:30 2021
+MSG SIZE rcvd: 88
+
+NS-Record:
+
+Input:
+mydig www.linkedin.com A
+
+mydig www.linkedin.com A
+QUESTION SECTION:
+www.linkedin.com     IN      A
+ANSWER SECTION:
+linkedin.com. 300 IN A 13.107.42.14
+
+Query time: 116 msec
+When: Thu Sep 23 19:56:06 2021
+MSG SIZE rcvd: 88
